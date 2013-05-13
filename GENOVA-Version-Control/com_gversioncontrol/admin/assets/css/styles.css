@@ -1,0 +1,78 @@
+@CHARSET "ISO-8859-1";
+
+.icon-32-search {
+	background: url(../images/toolbar/icon-32-search.png) 0 0 no-repeat;
+}
+table.compare p {
+	margin: 2px 0px;
+}
+table.compare td.diffcolumn.add {
+	background: #e1ffe0;
+	border-left: 2px solid #13890d;
+}
+table.compare td.oldcolumn.delete {
+	background: #ffe1e1;
+	border-left: 2px solid #d90c0c;
+}
+table.compare td.diffcolumn.change {
+	background: #ffffd9;
+	border-left: 2px solid #fce100;
+}
+table.compare .field-title {
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+table.compare th.old-revision-title, table.compare th.diff-revision-title {
+	width: 50%
+}
+table.compare td.oldcolumn,  table.compare td.diffcolumn {
+	vertical-align: top;
+	padding: 0px 5px;
+}
+table.revisions-table td, table.revisions-table tr, table.compare.frontend td, table.compare.frontend tr {
+	border: none;
+}
+table.revisions-table td.radio {
+	padding: 0px 5px;
+}
+table.revisions-table thead tr {
+	background: #eee;
+}
+table.revisions-table th, table.compare.frontend th {
+	padding: 5px;
+	text-align: center;
+}
+table.revisions-table tr.row1{
+	background: #f7f7f7;
+}
+table.revisions-table td, table.compare.frontend td {
+	padding: 3px;
+}
+.list-footer {
+	text-align: center;
+}
+.list-footer .limit, .list-footer ul, .list-footer ul li, #main .list-footer ul li {
+	display: inline-block;
+	padding: 0px 5px;
+}
+.gversioncontrol-navigation li, #main .gversioncontrol-navigation li {
+	float: left;
+	margin-right: 10px;
+}
+ul.gversioncontrol-navigation, #main ul.gversioncontrol-navigation{
+	list-style: none;
+	padding: 0;
+}
+
+/*
+ * Modal
+ */
+.modal h2 {
+	margin: 0px 0px 15px 0px;
+	border-bottom: 1px solid black;
+}
+.modal p {
+	margin-left: 0px;
+}

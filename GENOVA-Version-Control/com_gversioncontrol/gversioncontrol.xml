@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_gversioncontrol</name>
+	<creationDate>false</creationDate>
+	<author>Alexander Bachmann</author>
+	<authorEmail>bachmann@genova.de</authorEmail>
+	<authorUrl>http://www.genova.de</authorUrl>
+	<copyright>(c) 2013 Alexander Bachmann All rights reserverd.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0</version>
+	<description>COM_GVERSIONCONTROL_DESCRIPTION</description>
+	<install folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.gversioncontrol.sql</file>
+        </sql>
+    </install>
+    <uninstall folder="admin">
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.gversioncontrol.sql</file>
+        </sql>
+    </uninstall>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<filename>gversioncontrol.php</filename>
+		<filename>controller.php</filename>
+	</files>
+	<administration>
+		<menu img="components/com_gversioncontrol/assets/images/menu/genova_logo_flat.png">COM_GVERSIONCONTROL</menu>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+			<filename>gversioncontrol.php</filename>
+			<filename>controller.php</filename>
+			<filename>config.xml</filename>
+		</files>
+	</administration>
+</extension>

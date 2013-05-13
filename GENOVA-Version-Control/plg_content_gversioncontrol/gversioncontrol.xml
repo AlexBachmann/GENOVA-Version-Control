@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_gversioncontrol</name>
+	<author>Alexander Bachmann</author>
+	<creationDate>false</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>bachmann@genova.de</authorEmail>
+	<authorUrl>www.genova.org</authorUrl>
+	<version>1.0</version>
+	<description>PLG_CONTENT_GVERSIONCONTROL_DESC</description>
+	<files>
+			<filename plugin="gversioncontrol">gversioncontrol.php</filename>
+			<filename>index.html</filename>
+			<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+				type="accesslevel"
+				name="accesslevel"
+				label="PLG_CONTENT_GVERSIONCONTROL_ACCESSLEVEL_LABEL"
+				description="PLG_CONTENT_GVERSIONCONTROL_ACCESSLEVEL_DESC"
+			/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
